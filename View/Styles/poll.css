@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background-color: transparent;
+    font-family: sans-serif;
+}
+
+form:has(#thankyou)
+{
+    height: 400px;
+}
+#thankyou
+{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 200px;
+    top: 200px;
+}
+
+#main_container {
+    background-color: var(--main-color);
+    width: 400px;
+    border-radius: 40px;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+#main_container>* {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#radiobuttons>div {
+    margin: 20px 0;
+}
+
+#main_container>h1 {
+    color: var(--secondary-color);
+    width: 80%;
+    font-size: 42px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+#radiobuttons {
+    width: 70%;
+}
+
+#radiobuttons>div {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#radiobuttons>div>* {
+    font-size: 24px;
+    word-wrap: break-word;
+    color: var(--tertiary-color);
+}
+
+#radiobuttons>div>label::before {
+    content: '◉';
+    margin-right: 10px;
+}
+
+input[type='radio'] {
+    visibility: hidden;
+    height: 1em;
+    width: 1em;
+    margin-right: -1em;
+}
+
+#radiobuttons>div:has(input:checked) {
+    filter: brightness(90%);
+}
+
+input[type='submit'] {
+    background: var(--secondary-color);
+    border: none;
+    font-size: 32px;
+    padding: 15px;
+    border-radius: 15px;
+    color: var(--tertiary-color);
+}

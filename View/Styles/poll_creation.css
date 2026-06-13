@@ -1,0 +1,85 @@
+#main_container
+{
+    background-color: #26364D;
+    width: 70%;
+}
+#main_container h1
+{
+    color: #DDE6ED;
+    padding: 15px 0;
+    margin: 10vh auto 2vh;
+}
+#main_container form p
+{    
+    color: #9DB2BF;
+    padding: 10px 0;
+}
+.field
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+}
+.field span
+{
+    font-size: 42px;
+    text-align: left;
+}
+.field
+{
+    width: 100%;
+}
+.field *
+{
+    width: 45%;
+}
+input[type="submit"]
+{
+    border: none;
+    width: 70%;
+    font-size: 36px;
+    font-weight: 700;
+}
+input[type="text"]
+{
+    font-size: 42px;
+}
+.hidden
+{
+    display: none;
+}
+#colorscheme_row
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+#colorscheme_row label input
+{
+    display: none;
+}
+#colorscheme_row img
+{
+    width: 10vw;
+    height: 13.6875vw;
+}
+#colorscheme_row label input:checked ~ img
+{
+    border: 4px #DDE6ED solid;
+    width: calc(10vw - 8px);
+    height: calc(13.6875vw - 8px);
+    border-radius: calc(10vw/5);
+}
+form #trust:has(input:checked) + #trust_field
+{
+    display: none;
+}
+input:placeholder-shown
+{
+    font-size: 24px;
+    height: 2em;
+}
+#error
+{
+    color: red;
+}

@@ -1,0 +1,107 @@
+hr
+{
+    background-color: #6711DF;
+    height: 25px;
+    border: none;
+}
+section
+{
+    height: 100vh;
+}
+#first_section
+{
+    height: calc(90vh);
+    text-align: center;
+    background: linear-gradient(to right bottom, #35D618, #6260CB);
+}
+#first_section div b:nth-child(1) /* Первая строчка слогана */
+{
+    color: #FBD013;
+    font-size: 48px;
+}
+#first_section div b:nth-child(2) /* Первая строчка слогана */
+{
+    color: #FEE980;
+    font-size: 32px;
+}
+
+#second_section
+{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: linear-gradient(to top, #FFD101, transparent), linear-gradient(to top right, #35D618, #6260CB);
+}
+#simple_poll_text_div
+{
+    padding: 30px;
+    width: 28.125vw;
+    height: 28.125vw;
+    background: linear-gradient(to right top, #6711DF, #33265F);
+    color: #FF9200;
+    border-radius: 5px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: calc(1.7 * (2.556vw - 2px));
+}
+#second_section video
+{
+    width: 50vw;
+    height: 28.125vw;
+    border: 2px solid black;
+}
+#button_row
+{
+    margin-top: 6em;
+    gap: 100px;
+}
+#third_section div a
+{
+    color: #6711DF;
+    width: 30vw;
+    text-align: center;
+    background-color: #34D517;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 0.5em;
+    letter-spacing: 0;
+    font-size: 3vw;
+    font-weight: 700;
+}
+#third_section
+{
+    color: #6711DF;
+    background-color: #FFD101;
+}
+#third_section div h1
+{
+    font-size: 4vw;
+}
+@media screen and (max-width: 750px)
+{
+    #second_section
+    {
+        justify-content: center;
+        gap: 50px;
+        flex-direction: column;
+    }
+    #simple_poll_text_div
+    {
+        width: 70vw;
+        font-size: calc(3 * (2.556vw - 2px));
+    }
+    #second_section video
+    {
+        width: 90vw;
+        height: 50.625vw;
+    }
+    #third_section div h1
+    {
+        font-size: 9vw;
+    }
+    #third_section div a
+    {
+        width: 60vw;
+        font-size: 6vw;
+    }
+}

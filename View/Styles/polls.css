@@ -1,0 +1,59 @@
+#my_polls
+{
+    color: #27374D;
+    font-size: 64px;
+    padding: 6vh 0;
+}
+
+#polls_list
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    background-color: #536D82;
+    width: 60%;
+    font-size: 64px;
+    border-radius: 1em;
+    padding: 80px 0;
+}
+
+#polls_list > a:not(#add_poll)
+{
+    text-decoration: none;
+    width: 100%;
+}
+
+#polls_list div
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.4em;
+    
+    width: calc(90% - 40px);
+    background-color: #DDE6ED;
+    border-radius: 0.5em;
+    padding: 5px 20px;
+    margin: 0 auto;
+}
+
+#polls_list div img
+{
+    width: 9vh;
+    height: 9vh;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+#polls_list div span
+{
+    color: #526D82;
+}
+
+#add_poll img
+{
+    width: 9vh;
+    height: 9vh;
+}
